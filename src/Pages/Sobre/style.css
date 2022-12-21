@@ -1,0 +1,80 @@
+.banner-sobre {
+    background-image: url(../../../public/assets/banner-sobre.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.sobre-titulo {
+    position: absolute;
+    color: #fff;
+    text-shadow: 4px 4px 2px #474747;
+    font-size: 55px;
+    right: 35%;
+    top: 40%;
+    text-transform: uppercase;
+}
+
+.secao-sobre {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.secao-sobre h2 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.secao-sobre span {
+    font-style: italic;
+    font-weight: bold;
+    
+}
+
+.secao-sobre .especial {
+    margin-top: 30px;
+}
+
+.secao-sobre p {
+    margin-top: 10px;
+}
+
+.sobre-imagens {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.sobre-imagens img {
+    width: calc(100% / 2);
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .sobre-titulo {
+        font-size: 50px;
+        top: 50%;
+        right: 20%;
+    }
+
+    .secao-sobre p{
+        padding: 0 20px;
+    }
+
+    .sobre-imagens {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sobre-imagens img {
+        width: 100%;
+     }
+}
+
+@media (max-width: 425px) {
+    .sobre-titulo {
+        font-size: 30px;
+    }
+}

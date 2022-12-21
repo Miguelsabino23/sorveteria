@@ -1,0 +1,66 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+
+.rodape-informacoes {
+    width: 100%;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.rodape-informacoes img {
+    width: 70px;
+}
+
+.rodape-box {
+    max-width: 200px;
+}
+
+.rodape-box h3 {
+    text-transform: uppercase;
+}
+
+.rodape-box p {
+    color: #C7D1CC;
+}
+
+.rodape-desenvolvedor {
+    text-align: center;
+    color: #C7D1CC;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .rodape-informacoes {
+        flex-direction: column;
+        justify-content: center;
+        height: 500px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .rodape-informacoes img {
+        width: 90px;
+    }
+
+    .rodape-box {
+        margin: 20px 0;
+        max-width: 300px;
+    }
+
+    .rodape-desenvolvedor {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 425px) {
+    .rodape-desenvolvedor {
+        text-align: center;
+        max-width: 400px;
+    }
+}
